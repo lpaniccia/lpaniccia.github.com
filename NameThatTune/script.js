@@ -56,7 +56,7 @@ function getTracks() {
 function checkAnswer(guess) {
 
 	if (answer[0][guess] == correct){
-		document.getElementById("gameOver").innerHTML = '<h1 align="center">CORRECT</h1><br><img src="'+correctArt+'" style="padding:5px; float:left"/>'+correctBand+'<br><strong>'+correctSong+'</strong><br>'+correctAlbum+'<br><a href="'+correctBuy+'" target="_blank">Buy on iTunes';
+		document.getElementById("gameOver").innerHTML = '<h1 align="center">CORRECT</h1><br><img src="'+correctArt+'" style="padding:0px 10px 5px 30%; float:left"/>'+correctBand+'<br><strong>'+correctSong+'</strong><br>'+correctAlbum+'<br><a href="'+correctBuy+'" target="_blank">Buy on iTunes';
 	} else {
 		document.getElementById("gameOver").innerHTML = '<h1 align="center">WRONG</h1>';
 	};
