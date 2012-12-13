@@ -1,5 +1,3 @@
-
-
 function getTracks() {
 	var name = document.getElementById("Lastname").value;
 	document.getElementById("result").innerHTML = 'Hello ' + name + '!';
@@ -13,7 +11,7 @@ function getTracks() {
  	 document.getElementById("datadiv1").innerHTML = '<img width="100%" src="'+ recentTracks.recenttracks.track[0].image[3]["#text"] +'" style="float:left; padding-bottom:5px;"/>' + recentTracks.recenttracks.track[0].artist["#text"] + ' <br> ' + recentTracks.recenttracks.track[0].name + '<br><br>';
  	 document.getElementById("datadiv2").innerHTML = '<img width="100%" src="'+ recentTracks.recenttracks.track[1].image[3]["#text"] +'" style="float:left; padding-bottom:5px; "/>' + recentTracks.recenttracks.track[1].artist["#text"] + ' <br> ' + recentTracks.recenttracks.track[1].name + '<br><br>';
  	 document.getElementById("datadiv3").innerHTML = '<img width="100%" src="'+ recentTracks.recenttracks.track[2].image[3]["#text"] +'" style="float:left; padding-bottom:5px;"/>' + recentTracks.recenttracks.track[2].artist["#text"] + ' <br> ' + recentTracks.recenttracks.track[2].name + '<br><br>';
-
+ 	 
  	 });
 
 
