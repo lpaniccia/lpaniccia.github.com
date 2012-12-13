@@ -34,7 +34,6 @@ function getTracks() {
  	 
  	 //Show artist or song
  	 var cointoss = Math.floor(Math.random()*2 + 1)
- 	 console.log('coin '+ cointoss);
 
  	 //Pick one of the 4 answers to be "correct"
  	 correct = answer[attempt][Math.floor(Math.random()*3 + 0)];
@@ -47,7 +46,7 @@ function getTracks() {
  	 correctBuy = songs.playlist[correct].trackViewUrl;
 
  	 //Put correct song in the player.
- 	 document.getElementById("player").innerHTML = '<audio controls> <source src="'+ songs.playlist[correct].previewUrl +'"" type="audio/mpeg"> </audio>';
+ 	 document.getElementById("player").innerHTML = '<audio controls autoplay="autoplay"> <source src="'+ songs.playlist[correct].previewUrl +'"" type="audio/mpeg"> </audio>';
 
  	 //Asign the answers to buttons on the page based on the cointoss.
 
@@ -62,9 +61,6 @@ function getTracks() {
  	 	document.getElementById("song3").innerHTML = songs.playlist[answer[attempt][2]].artistName;
  	 	document.getElementById("song4").innerHTML = songs.playlist[answer[attempt][3]].artistName;
  	 };
-
-
-
 
  	 //Show the buttons when DROP THE NEEDLE is clicked.
  	 document.getElementById("song1").style.visibility = "visible";
