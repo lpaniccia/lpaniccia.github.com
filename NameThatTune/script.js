@@ -32,8 +32,9 @@ function getTracks() {
  	 //TODO: Prevent the same answer from being displayed twice.
  	 answer.push([Math.floor(Math.random()*playlistLength + 0),Math.floor(Math.random()*playlistLength + 0),Math.floor(Math.random()*playlistLength + 0),Math.floor(Math.random()*playlistLength + 0)]);
  	 
- 	 console.log(answer);
- 	 console.log(attempt);
+ 	 //Show artist or song
+ 	 var cointoss = Math.floor(Math.random()*2 + 1)
+ 	 console.log('coin '+ cointoss);
 
  	 //Pick one of the 4 answers to be "correct"
  	 correct = answer[attempt][Math.floor(Math.random()*3 + 0)];
@@ -48,11 +49,22 @@ function getTracks() {
  	 //Put correct song in the player.
  	 document.getElementById("player").innerHTML = '<audio controls> <source src="'+ songs.playlist[correct].previewUrl +'"" type="audio/mpeg"> </audio>';
 
- 	 //Asign the answers to buttons on the page.
- 	 document.getElementById("song1").innerHTML = songs.playlist[answer[attempt][0]].trackName;
- 	 document.getElementById("song2").innerHTML = songs.playlist[answer[attempt][1]].trackName;
- 	 document.getElementById("song3").innerHTML = songs.playlist[answer[attempt][2]].trackName;
- 	 document.getElementById("song4").innerHTML = songs.playlist[answer[attempt][3]].trackName;
+ 	 //Asign the answers to buttons on the page based on the cointoss.
+
+ 	 if (cointoss == 1){
+ 	 	document.getElementById("song1").innerHTML = songs.playlist[answer[attempt][0]].trackName;
+ 	 	document.getElementById("song2").innerHTML = songs.playlist[answer[attempt][1]].trackName;
+ 	 	document.getElementById("song3").innerHTML = songs.playlist[answer[attempt][2]].trackName;
+ 	 	document.getElementById("song4").innerHTML = songs.playlist[answer[attempt][3]].trackName;
+ 	 } else {
+ 	 	document.getElementById("song1").innerHTML = songs.playlist[answer[attempt][0]].artistName;
+ 	 	document.getElementById("song2").innerHTML = songs.playlist[answer[attempt][1]].artistName;
+ 	 	document.getElementById("song3").innerHTML = songs.playlist[answer[attempt][2]].artistName;
+ 	 	document.getElementById("song4").innerHTML = songs.playlist[answer[attempt][3]].artistName;
+ 	 };
+
+
+
 
  	 //Show the buttons when DROP THE NEEDLE is clicked.
  	 document.getElementById("song1").style.visibility = "visible";
