@@ -37,11 +37,17 @@ function getTracks() {
  	 document.getElementById("player").innerHTML = '<audio controls> <source src="'+ songs.playlist[correct].previewUrl +'"" type="audio/mpeg"> </audio>';
 
  	 //Asign the answers to buttons on the page.
- 	 //TODO: Hide buttons on pageload.
  	 document.getElementById("song1").innerHTML = songs.playlist[answer[0][0]].trackName;
  	 document.getElementById("song2").innerHTML = songs.playlist[answer[0][1]].trackName;
  	 document.getElementById("song3").innerHTML = songs.playlist[answer[0][2]].trackName;
  	 document.getElementById("song4").innerHTML = songs.playlist[answer[0][3]].trackName;
+
+ 	 //Show the buttons when DROP THE NEEDLE is clicked.
+ 	 document.getElementById("song1").style.visibility = "visible";
+ 	 document.getElementById("song2").style.visibility = "visible";
+ 	 document.getElementById("song3").style.visibility = "visible";
+ 	 document.getElementById("song4").style.visibility = "visible";
+
  	 });
 
 	
