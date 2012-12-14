@@ -92,7 +92,7 @@ function checkAnswer(guess) {
  	 	document.getElementById("again").style.visibility = "visible";
 
 	} else {
-		document.getElementById("gameOver").innerHTML = '<h1 align="center">WRONG</h1>';
-		rightans --;
+		document.getElementById("gameOver").innerHTML = '<div align="center"> <h1>WRONG</h1>Your score has been reset to 0 :(</div>';
+		rightans = 0;
 	};
 }
