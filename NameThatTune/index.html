@@ -18,6 +18,9 @@
   .span3 {
     visibility:hidden;
     padding-bottom:10px; }
+  #again {
+    visibility:hidden;
+  }
   </style>
 
   </head>
@@ -45,6 +48,7 @@
       <div id="score" align="center"></div>
       <div class="container" id="player" align="center" style="padding:10px 0px 20px 0px;"></div>
       <div class="container" id="gameOver" style="padding-bottom:20px;"></div>
+      <div id="again" align="center"><a class="btn btn-large btn-primary" onclick="getTracks('')"><span class="btn-label">Play Again<br></span></a>
       <div class="row">
         <div class="span3">
           <a class="btn btn-success" onclick="checkAnswer('0')" id="song1"><span class="btn-label">Song 1<br></span></a> 

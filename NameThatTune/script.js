@@ -27,6 +27,7 @@ function getTracks() {
 
  	 //clear old game results.
 	 document.getElementById("gameOver").innerHTML = ''; 	 
+	 document.getElementById("again").style.visibility = "hidden";
 
  	 // Pick 4 songs at random from the playlist
  	 //TODO: Prevent the same answer from being displayed twice.
@@ -87,7 +88,8 @@ function checkAnswer(guess) {
  	 	document.getElementById("song3").style.visibility = "hidden";
  	 	document.getElementById("song4").style.visibility = "hidden";
 
- 	 	//TODO: Show "play again" button
+ 	 	//Show "play again" button
+ 	 	document.getElementById("again").style.visibility = "visible";
 
 	} else {
 		document.getElementById("gameOver").innerHTML = '<h1 align="center">WRONG</h1>';
