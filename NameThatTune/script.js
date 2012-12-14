@@ -1,6 +1,6 @@
 //API settings
-var enviroment = "development";
-var episodeID = "50cb3c9eeb20db5a6f00005e";
+var enviroment = "qa";
+var episodeID = "50ca04e4564f39df7d000002";
 var APIcall = "http://composer-"+enviroment+".ci.publicbroadcasting.net/api/episode/"+episodeID+"?part=all&offset=-5&api_key=special-key"
 
 //Declaring song array
@@ -92,7 +92,7 @@ function checkAnswer(guess) {
  	 	document.getElementById("again").style.visibility = "visible";
 
 	} else {
-		document.getElementById("gameOver").innerHTML = '<div align="center"> <h1>WRONG</h1>Your score has been reset to 0 :(</div>';
+		document.getElementById("gameOver").innerHTML = '<div align="center"> <h1>WRONG</h1>Your score has been reset to 0 :(<br> At least you answered '+rightans+' songs correctly.</div>';
 		rightans = 0;
 	};
 }
