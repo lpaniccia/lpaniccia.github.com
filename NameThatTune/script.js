@@ -1,6 +1,6 @@
 //API settings
-var enviroment = "qa";
-var episodeID = "50ca04e4564f39df7d000002";
+var enviroment = "development";
+var episodeID = "50cb3c9eeb20db5a6f00005e";
 var APIcall = "http://composer-"+enviroment+".ci.publicbroadcasting.net/api/episode/"+episodeID+"?part=all&offset=-5&api_key=special-key"
 
 //Declaring song array
@@ -80,10 +80,17 @@ function checkAnswer(guess) {
 		attempt ++;
 		rightans ++;
 		document.getElementById("score").innerHTML = 'Score: '+rightans;
+
+		//Hide buttons when correct answer is found.
+ 	 	document.getElementById("song1").style.visibility = "hidden";
+ 	 	document.getElementById("song2").style.visibility = "hidden";
+ 	 	document.getElementById("song3").style.visibility = "hidden";
+ 	 	document.getElementById("song4").style.visibility = "hidden";
+
+ 	 	//TODO: Show "play again" button
+
 	} else {
 		document.getElementById("gameOver").innerHTML = '<h1 align="center">WRONG</h1>';
 		rightans --;
 	};
-
-
 }
