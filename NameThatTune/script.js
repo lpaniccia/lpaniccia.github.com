@@ -1,7 +1,7 @@
 //API settings
-var enviroment = "qa";
-var episodeID = "50ca04e4564f39df7d000002";
-var APIcall = "http://composer-"+enviroment+".ci.publicbroadcasting.net/api/episode/"+episodeID+"?part=all&offset=-5&api_key=special-key"
+var enviroment = "composer.nprstations.org";
+var episodeID = "50d378475ab08b773e000002";
+var APIcall = "http://"+enviroment+"/api/episode/"+episodeID+"?part=all&offset=-5&api_key=special-key"
 
 //Declaring song array
 var answer = [ ];
