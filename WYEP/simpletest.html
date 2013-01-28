@@ -4,58 +4,7 @@
   <head>
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="http://composer.nprstations.org/widgets/src/whatson.js"></script>
-<script>
-;(function($){
-
-  $.songList = $.songList || {};
-  
-  $.songList.template = function(url, elem, refresh ){ 
-    setTimeout(function(){
-      $.ajax({
-        url: url,
-        dataType: 'jsonp',
-        success: function(data){
-          elem.empty().append(data);
-        },
-        complete: $.songList.template( url, elem, 60000 )
-      });
-    }, refresh);
-  };
-
-  $.fn.songList = function( options ){
-    if( this.data( 'playlist-init' ) || !options.station ) { return; }
-    this.data( 'playlist-init', true );
-    options = $.extend( {}, $.fn.songList.options, options );
-    $.songList.env = options.env;
-
-    if (!!$('#search-styles')) $('head').append('<link id="search-styles" rel="stylesheet" href="' + $.songList.env + '/widgets/css/sass-dir/css/list.css" type="text/css" />');
-    
-    return this.each(function(){
-      
-      var elem = options.elem = $( this );
-      var station = options.station;
-      var prog_id = (options.prog_id) ? '&prog_id=' + options.prog_id : '';
-
-      var apiKey = '&api_key=' + options.apiKey;
-      var itunes = (options.affiliate.itunes) ? '&itunes=' + encodeURIComponent(options.affiliate.itunes) : '';
-      var amazon = (options.affiliate.amazon) ? '&amazon=' + encodeURIComponent(options.affiliate.amazon) : '';
-      var archiv = (options.affiliate.archiv) ? '&archiv=' + encodeURIComponent(options.affiliate.archiv) : '';
-
-      var url = $.songList.env + '/api/widget/1/' + station + '/tracks?callback=?&format=jsonp' + prog_id + apiKey + itunes + amazon + archiv;
-
-      $.songList.template( url, elem, 0 );
-
-    });
-  };
-
-  $.fn.songList.options = {
-    env: '',
-    prog_id: ''
-  };
-
-})( jQuery );
-
-</script>
+<script src="http://composer.nprstations.org/widgets/src/songlist.js"></script>
   <script src="http://composer.nprstations.org/widgets/src/searchlist.js"></script>
      <script>
     $(function(){
