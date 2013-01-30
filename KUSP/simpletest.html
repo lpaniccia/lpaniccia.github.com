@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+     <script src="http://composer.nprstations.org/widgets/src/songlist.js"></script>
+     <script src="http://composer.nprstations.org/widgets/src/searchlist.js"></script>
+
+     <script>
+       $(function(){ 
+         $('.searchlist').searchList({ 
+           station: '50edc0d5e1c8429e061c1571', 
+           prog_id: '50edc0d9e1c8429e061c157c',
+           env: 'http://composer.nprstations.org',
+           affiliate: {
+             itunes: 'znxdL*kb/Sw&bids',
+             amazon: 'dan-test'
+           }
+         }); 
+       }); 
+     </script>
+
+     <script>
+         $(function(){ 
+           $('.songlist').songList({ 
+               station: '50edc0d5e1c8429e061c1571', 
+               prog_id: '50edc0d9e1c8429e061c157c',
+             env: 'http://composer.nprstations.org',
+             affiliate: {
+               itunes: 'znxdL*kb/Sw&bids',
+               amazon: 'dan-test'
+             }
+           }); 
+         }); 
+     </script>
+  </head>
+
+  <body>
+
+   <div class="searchlist"></div>
+
+   <div class="songlist"></div>
+
+  </body>
