@@ -76,7 +76,7 @@
 	   text-align: center;
 	}
 	
-@media only screen and (max-device-width : 736px){
+@media only screen and (max-width : 736px){
 	  	
 	html {
 	  		background-color: black;
@@ -87,17 +87,7 @@
 	  	background-size: cover;
 		}
 		
-	h1 {
-			font-size: 3.5em;
-		}
 
-	h2 {
-			font-size: 3em;
-	}
-
-	p,td, ul {
-			font-size: 2.5em;
-		}
 	table {
 		width: 90% ;
 		margin-left: auto ;
@@ -109,23 +99,4 @@
 		text-align: left;
 	}
 
-	#appStoreBtn{
-
-	background:url(http://res.cloudinary.com/dexr0h5o5/image/upload/c_scale,h_160,w_540/v1463524784/badge_appstore-lrg_nc74sf.png) no-repeat;
-		width:540px;
-		height:160px;
-	}
-
-	#phone {
-	position:fixed;
-	margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
-	left: 0;
-	right: 0;
-	content: url("http://res.cloudinary.com/dexr0h5o5/image/upload/c_scale,w_700/v1463516135/iPhone6s-RoseGold-BackFront-HeroFish-PR-PRINT_ctfw0j.png");
-	z-index: -1;
-	}
-
-	.footer{
-	   height:125px;
-	}
 }
