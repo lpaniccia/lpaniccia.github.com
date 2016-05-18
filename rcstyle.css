@@ -57,7 +57,7 @@
 	}
 
 
-	#main { 
+	html { 
 	  	background-color: black;
 	  	background: url(https://res.cloudinary.com/dexr0h5o5/image/upload/c_fill,e_grayscale,g_center,h_1728,w_2592/c_scale,h_1728,l_black_ehj1ga,o_75,w_2592/v1463512143/recordstore_nacx52.jpg) no-repeat center center fixed; 
 	  	-webkit-background-size: cover;
@@ -80,7 +80,7 @@
 	
 @media only screen and (max-width : 736px){
 	  	
-	#main {
+	html {
 	  		background-color: black;
 	  		background: url(https://res.cloudinary.com/dexr0h5o5/image/upload/c_fill,e_grayscale,g_center,h_750,w_1334/c_scale,h_750,l_black_ehj1ga,o_75,w_1334/v1463512143/recordstore_nacx52.jpg) no-repeat center center fixed; 
 	  	-webkit-background-size: cover;
