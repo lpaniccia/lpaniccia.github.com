@@ -1,121 +1,92 @@
-
-	h1, h2, h3, label {
-		color: white;
-		font-family: 'Oswald', sans-serif;
-	}
-
-	p, td, ul {
-		color: white;
-		font-family: 'Open Sans', sans-serif;
-	}
-
-	ul, td {
-		text-align: left;
-	}
-
-	a {
-		color: #66CCFF;
-		text-decoration: none;
-
-	}
-
-	table {
-		border: 1px solid white;
-		width: 60% ;
-
-	}
-
-	h1{
-		font-size: 1.5em;
-	}
-
-	.hero-unit{
-		text-align: center;
-	}
-
-	.content{
-	width: 60% ;
-  	margin-left: auto ;
-  	margin-right: auto ;
-  	text-align: left;
-  	margin-bottom: 200px;
-	}
-
-
-	#appStoreBtn{
-	display:inline-block;
-
-	overflow:hidden;
-	background:url(http://res.cloudinary.com/dexr0h5o5/image/upload/c_scale,h_80,w_270/v1463524784/badge_appstore-lrg_nc74sf.png) no-repeat;
-	width:270px;
-	height:80px;
-	}
-
-	#phone {
-		position:fixed;
-		margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
-		left: 0;
-		right: 0;
-		content: url("http://res.cloudinary.com/dexr0h5o5/image/upload/c_scale,h_600/v1463516135/iPhone6s-RoseGold-BackFront-HeroFish-PR-PRINT_ctfw0j.png")
-	}
-
-	body:before {
-  content: "";
-  display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -10;
-  background: url(https://res.cloudinary.com/dexr0h5o5/image/upload/c_fill,e_grayscale,g_center,h_1728,w_2592/c_scale,h_1728,l_black_ehj1ga,o_75,w_2592/v1463512143/recordstore_nacx52.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+h1,
+h2,
+h3,
+label {
+    color: white;
+    font-family: 'Oswald', sans-serif;
 }
-
-	.footer{
-	   position:fixed;
-	   left:0px;
-	   bottom:0px;
-	   height:50px;
-	   width:100%;
-	   background: #2F4F4F;
-	   text-align: center;
-	}
-	
-@media only screen and (max-width : 736px){
-	  	
-
-
+p,
+td,
+ul {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+ul,
+td {
+    text-align: left;
+}
+a {
+    color: #66CCFF;
+    text-decoration: none;
+}
+table {
+    border: 1px solid white;
+    width: 60%;
+}
+h1 {
+    font-size: 1.5em;
+}
+.hero-unit {
+    text-align: center;
+}
+.content {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-bottom: 200px;
+}
+#appStoreBtn {
+    display: inline-block;
+    overflow: hidden;
+    background: url(http://res.cloudinary.com/dexr0h5o5/image/upload/c_scale,h_80,w_270/v1463524784/badge_appstore-lrg_nc74sf.png) no-repeat;
+    width: 270px;
+    height: 80px;
+}
+#phone {
+    position: fixed;
+    margin: 5% auto;
+    /* Will not center vertically and won't work in IE6/7. */
+    
+    left: 0;
+    right: 0;
+    content: url("http://res.cloudinary.com/dexr0h5o5/image/upload/c_scale,h_600/v1463516135/iPhone6s-RoseGold-BackFront-HeroFish-PR-PRINT_ctfw0j.png")
+}
 body:before {
-  content: "";
-  display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -10;
-  background: url(https://res.cloudinary.com/dexr0h5o5/image/upload/c_fill,e_grayscale,g_center,h_750,w_1334/c_scale,h_750,l_black_ehj1ga,o_75,w_1334/v1463512143/recordstore_nacx52.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(https://res.cloudinary.com/dexr0h5o5/image/upload/c_fill,e_grayscale,g_center,h_1728,w_2592/c_scale,h_1728,l_black_ehj1ga,o_75,w_2592/v1463512143/recordstore_nacx52.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-
-
-
-	table {
-		width: 90% ;
-		margin-left: auto ;
-  		margin-right: auto ;
-	}
-
-	.content{
-		width: 90%;
-		text-align: left;
-	}
-
+.footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background: #2F4F4F;
+    text-align: center;
+}
+@media only screen and (max-width: 736px) {
+    body:before {
+        background: url(https://res.cloudinary.com/dexr0h5o5/image/upload/c_fill,e_grayscale,g_center,h_750,w_1334/c_scale,h_750,l_black_ehj1ga,o_75,w_1334/v1463512143/recordstore_nacx52.jpg) no-repeat center center;
+    }
+    table {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content {
+        width: 90%;
+        text-align: left;
+    }
 }
