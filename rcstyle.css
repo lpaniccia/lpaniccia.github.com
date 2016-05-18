@@ -1,0 +1,131 @@
+
+	h1, h2, h3, label {
+		color: white;
+		font-family: 'Oswald', sans-serif;
+	}
+
+	p, td, ul {
+		color: white;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	ul, td {
+		text-align: left;
+	}
+
+	a {
+		color: #66CCFF;
+		text-decoration: none;
+
+	}
+
+	table {
+		border: 1px solid white;
+		width: 60% ;
+
+	}
+
+
+	.hero-unit{
+		text-align: center;
+	}
+
+	.content{
+	width: 60% ;
+  	margin-left: auto ;
+  	margin-right: auto ;
+  	text-align: left;
+  	margin-bottom: 200px;
+	}
+
+
+	#appStoreBtn{
+	display:inline-block;
+
+	overflow:hidden;
+	background:url(http://res.cloudinary.com/dexr0h5o5/image/upload/c_scale,h_80,w_270/v1463524784/badge_appstore-lrg_nc74sf.png) no-repeat;
+	width:270px;
+	height:80px;
+	}
+
+	#phone {
+		position:fixed;
+		margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+		left: 0;
+		right: 0;
+		content: url("http://res.cloudinary.com/dexr0h5o5/image/upload/c_scale,h_600/v1463516135/iPhone6s-RoseGold-BackFront-HeroFish-PR-PRINT_ctfw0j.png")
+	}
+
+
+	html { 
+	  	background-color: black;
+	  	background: url(https://res.cloudinary.com/dexr0h5o5/image/upload/c_fill,e_grayscale,g_center,h_1728,w_2592/c_scale,h_1728,l_black_ehj1ga,o_75,w_2592/v1463512143/recordstore_nacx52.jpg) no-repeat center center fixed; 
+	  	-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	}
+
+	.footer{
+	   position:fixed;
+	   left:0px;
+	   bottom:0px;
+	   height:50px;
+	   width:100%;
+	   background: #2F4F4F;
+	   text-align: center;
+	}
+	
+@media only screen and (max-device-width : 736px){
+	  	
+	html {
+	  		background-color: black;
+	  		background: url(https://res.cloudinary.com/dexr0h5o5/image/upload/c_fill,e_grayscale,g_center,h_750,w_1334/c_scale,h_750,l_black_ehj1ga,o_75,w_1334/v1463512143/recordstore_nacx52.jpg) no-repeat center center fixed; 
+	  	-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+		}
+		
+	h1 {
+			font-size: 3.5em;
+		}
+
+	h2 {
+			font-size: 3em;
+	}
+
+	p,td, ul {
+			font-size: 2.5em;
+		}
+	table {
+		width: 90% ;
+		margin-left: auto ;
+  		margin-right: auto ;
+	}
+
+	.content{
+		width: 90%;
+		text-align: left;
+	}
+
+	#appStoreBtn{
+
+	background:url(http://res.cloudinary.com/dexr0h5o5/image/upload/c_scale,h_160,w_540/v1463524784/badge_appstore-lrg_nc74sf.png) no-repeat;
+		width:540px;
+		height:160px;
+	}
+
+	#phone {
+	position:fixed;
+	margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+	left: 0;
+	right: 0;
+	content: url("http://res.cloudinary.com/dexr0h5o5/image/upload/c_scale,w_700/v1463516135/iPhone6s-RoseGold-BackFront-HeroFish-PR-PRINT_ctfw0j.png");
+	z-index: -1;
+	}
+
+	.footer{
+	   height:125px;
+	}
+}
